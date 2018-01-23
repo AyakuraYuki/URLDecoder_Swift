@@ -12,7 +12,10 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let alert = NSAlert()
+        alert.messageText = NSLocalizedString("Welcome", comment: "Welcome")
+        alert.alertStyle = NSAlert.Style.informational
+        alert.runModal()
         // Do any additional setup after loading the view.
     }
     

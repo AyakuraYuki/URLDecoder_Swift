@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  URLDecoderSwift
+
+  Created by 绫仓优希 on 2018/1/24.
+  Copyright © 2018年 YukiAyakura. All rights reserved.
+*/
+
+"Welcome" = "Welcome to URL Encoder and Decoder :D";
