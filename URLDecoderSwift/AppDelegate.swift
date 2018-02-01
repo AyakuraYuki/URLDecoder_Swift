@@ -16,12 +16,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var closeMenuItem: NSMenuItem!
     @IBOutlet weak var quitMenuItem: NSMenuItem!
     
+    @IBOutlet weak var editMenuItem: NSMenuItem!
+    @IBOutlet weak var cutMenuItem: NSMenuItem!
+    @IBOutlet weak var copyMenuItem: NSMenuItem!
+    @IBOutlet weak var pasteMenuItem: NSMenuItem!
+    @IBOutlet weak var pamMenuItem: NSMenuItem!
+    @IBOutlet weak var deleteMenuItem: NSMenuItem!
+    @IBOutlet weak var selectAllMenuItem: NSMenuItem!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         aboutMenuItem.title = NSLocalizedString("About", comment: "")
         serviceMenuItem.title = NSLocalizedString("Service", comment: "")
         closeMenuItem.title = NSLocalizedString("Close", comment: "")
         quitMenuItem.title = NSLocalizedString("Quit", comment: "")
+        editMenuItem.title = NSLocalizedString("Edit", comment: "")
+        cutMenuItem.title = NSLocalizedString("Cut", comment: "")
+        copyMenuItem.title = NSLocalizedString("Copy", comment: "")
+        pasteMenuItem.title = NSLocalizedString("Paste", comment: "")
+        pamMenuItem.title = NSLocalizedString("PAM", comment: "")
+        deleteMenuItem.title = NSLocalizedString("Delete", comment: "")
+        selectAllMenuItem.title = NSLocalizedString("Select All", comment: "")
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {

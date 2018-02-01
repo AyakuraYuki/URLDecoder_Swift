@@ -42,6 +42,56 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Edit" id="zv1-Ph-JiW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="jmd-Ll-7Iw">
+                                    <items>
+                                        <menuItem title="Undo" keyEquivalent="z" id="PhM-PD-MHT">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="xhG-K2-Bag"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="2WG-sH-6Lo">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="SMS-4k-fbL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VdO-cL-Xn2"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="ut8-g9-qgv">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="xGU-bT-AgO"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="SAH-61-Pim">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="Nxe-Xv-jA3"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="hf2-On-3lL">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="BUG-1T-RWd"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste and Match Style" keyEquivalent="V" id="9mL-GP-gGO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="pasteAsPlainText:" target="Ady-hI-5gd" id="d4b-c4-aD2"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Delete" id="7gB-Ij-BVD">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="delete:" target="Ady-hI-5gd" id="2nl-Av-Vaa"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Select All" keyEquivalent="a" id="hNK-KC-siK">
+                                            <connections>
+                                                <action selector="selectAll:" target="Ady-hI-5gd" id="jVm-or-ILa"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
@@ -52,8 +102,15 @@
                     <connections>
                         <outlet property="aboutMenuItem" destination="5kV-Vb-QxS" id="Z0V-0G-Ynf"/>
                         <outlet property="closeMenuItem" destination="4sb-4s-VLi" id="bAd-3Q-7uk"/>
+                        <outlet property="copyMenuItem" destination="SAH-61-Pim" id="tQr-fU-pNN"/>
+                        <outlet property="cutMenuItem" destination="ut8-g9-qgv" id="JUt-ay-bU9"/>
+                        <outlet property="deleteMenuItem" destination="7gB-Ij-BVD" id="9KZ-9R-2I6"/>
+                        <outlet property="editMenuItem" destination="zv1-Ph-JiW" id="UGx-gS-RkM"/>
                         <outlet property="h2333" destination="4je-JR-u6R" id="Ct7-Wn-7Cz"/>
+                        <outlet property="pamMenuItem" destination="9mL-GP-gGO" id="lYA-Lg-G7z"/>
+                        <outlet property="pasteMenuItem" destination="hf2-On-3lL" id="6v0-Kh-8bG"/>
                         <outlet property="quitMenuItem" destination="cUP-oJ-YGQ" id="DET-zw-ZOi"/>
+                        <outlet property="selectAllMenuItem" destination="hNK-KC-siK" id="ygn-DF-EsU"/>
                         <outlet property="serviceMenuItem" destination="NMo-om-nkz" id="LR0-yh-8Gg"/>
                     </connections>
                 </customObject>
@@ -94,7 +151,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8Y-bc-fEM" userLabel="encoded">
                                 <rect key="frame" x="20" y="20" width="329" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="6yt-Lc-vcf" userLabel="plainText">
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" allowsEditingTextAttributes="YES" id="6yt-Lc-vcf" userLabel="plainText">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -103,7 +160,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EoO-9c-QX7" userLabel="decoded">
                                 <rect key="frame" x="491" y="20" width="329" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="5hB-iH-TPh" userLabel="cipherText">
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" allowsEditingTextAttributes="YES" id="5hB-iH-TPh" userLabel="cipherText">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -138,6 +195,7 @@
                         <outlet property="decodeButton" destination="Aon-a2-Ezi" id="Ubv-4m-YXh"/>
                         <outlet property="encodeButton" destination="Kfn-gy-FBK" id="okN-yE-UCo"/>
                         <outlet property="plainText" destination="6yt-Lc-vcf" id="edT-Gr-A4s"/>
+                        <outlet property="plainTextView" destination="EoO-9c-QX7" id="Ukp-3U-7Yi"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

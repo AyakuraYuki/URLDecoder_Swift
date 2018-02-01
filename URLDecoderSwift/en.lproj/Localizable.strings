@@ -17,10 +17,19 @@
 
 // AYWindowController.swift
 "WindowTitle" = "URLDecoder";
+
 "About" = "About URLDecoder";
 "Service" = "Service";
 "Close" = "Close window";
 "Quit" = "Quit URLDecoder";
+
+"Edit" = "Edit";
+"Cut" = "Cut";
+"Copy" = "Copy";
+"Paste" = "Paste";
+"PAM" = "Paste and Match Style";
+"Delete" = "Delete";
+"Select All" = "Select All";
 
 
 // AYViewController.swift

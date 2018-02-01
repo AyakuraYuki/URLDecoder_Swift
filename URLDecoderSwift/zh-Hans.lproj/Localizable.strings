@@ -17,10 +17,19 @@
 
 // AYWindowController.swift
 "WindowTitle" = "URL编码和解码";
+
 "About" = "关于 URL编码和解码";
 "Service" = "服务";
 "Close" = "关闭窗口";
 "Quit" = "退出 URL编码和解码";
+
+"Edit" = "编辑";
+"Cut" = "剪切";
+"Copy" = "拷贝";
+"Paste" = "粘贴";
+"PAM" = "粘贴并匹配样式";
+"Delete" = "删除";
+"Select All" = "全选";
 
 
 // ViewController.swift
