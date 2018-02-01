@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D041789020178A9E00A50717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041788F20178A9E00A50717 /* AppDelegate.swift */; };
-		D041789220178A9E00A50717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041789120178A9E00A50717 /* ViewController.swift */; };
+		D041789220178A9E00A50717 /* AYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041789120178A9E00A50717 /* AYViewController.swift */; };
 		D041789520178A9E00A50717 /* URLDecoderSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D041789320178A9E00A50717 /* URLDecoderSwift.xcdatamodeld */; };
 		D041789720178A9E00A50717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D041789620178A9E00A50717 /* Assets.xcassets */; };
 		D041789A20178A9E00A50717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D041789820178A9E00A50717 /* Main.storyboard */; };
 		D04178A620178A9E00A50717 /* URLDecoderSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04178A520178A9E00A50717 /* URLDecoderSwiftTests.swift */; };
 		D04178B120178A9E00A50717 /* URLDecoderSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04178B020178A9E00A50717 /* URLDecoderSwiftUITests.swift */; };
 		D04178C120178E6F00A50717 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D04178C320178E6F00A50717 /* InfoPlist.strings */; };
+		D0871B2A2023047300F831E5 /* AYWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0871B292023047300F831E5 /* AYWindowController.swift */; };
 		D095BFFC2017979600B99FD8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D095BFFE2017979600B99FD8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D041788C20178A9E00A50717 /* URLDecoderSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLDecoderSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D041788F20178A9E00A50717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D041789120178A9E00A50717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D041789120178A9E00A50717 /* AYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYViewController.swift; sourceTree = "<group>"; };
 		D041789420178A9E00A50717 /* URLDecoderSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URLDecoderSwift.xcdatamodel; sourceTree = "<group>"; };
 		D041789620178A9E00A50717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D041789920178A9E00A50717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		D04178B220178A9E00A50717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D04178C220178E6F00A50717 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D04178C420178E7100A50717 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D0871B292023047300F831E5 /* AYWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYWindowController.swift; sourceTree = "<group>"; };
 		D095BFFD2017979600B99FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D095BFFF2017979800B99FD8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,14 +107,15 @@
 			isa = PBXGroup;
 			children = (
 				D041788F20178A9E00A50717 /* AppDelegate.swift */,
-				D041789120178A9E00A50717 /* ViewController.swift */,
-				D041789620178A9E00A50717 /* Assets.xcassets */,
+				D041789120178A9E00A50717 /* AYViewController.swift */,
+				D0871B292023047300F831E5 /* AYWindowController.swift */,
 				D041789820178A9E00A50717 /* Main.storyboard */,
+				D041789620178A9E00A50717 /* Assets.xcassets */,
 				D041789B20178A9E00A50717 /* Info.plist */,
 				D04178C320178E6F00A50717 /* InfoPlist.strings */,
+				D095BFFE2017979600B99FD8 /* Localizable.strings */,
 				D041789C20178A9E00A50717 /* URLDecoderSwift.entitlements */,
 				D041789320178A9E00A50717 /* URLDecoderSwift.xcdatamodeld */,
-				D095BFFE2017979600B99FD8 /* Localizable.strings */,
 			);
 			path = URLDecoderSwift;
 			sourceTree = "<group>";
@@ -271,7 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D041789220178A9E00A50717 /* ViewController.swift in Sources */,
+				D041789220178A9E00A50717 /* AYViewController.swift in Sources */,
+				D0871B2A2023047300F831E5 /* AYWindowController.swift in Sources */,
 				D041789520178A9E00A50717 /* URLDecoderSwift.xcdatamodeld in Sources */,
 				D041789020178A9E00A50717 /* AppDelegate.swift in Sources */,
 			);

@@ -14,9 +14,18 @@
 "Quit anyway" = "Quit anyway";
 "Cancel" = "Cancel";
 
-// ViewController.swift
-"WindowTitle" = "URL Encoder and Decoder";
+
+// AYWindowController.swift
+"WindowTitle" = "URLDecoder";
+"About" = "About URLDecoder";
+"Service" = "Service";
+"Close" = "Close window";
+"Quit" = "Quit URLDecoder";
+
+
+// AYViewController.swift
 "plainTextHint" = "Input plain url/text here...";
 "cipherTextHint" = "Input encoded url/text here...";
 "encodeButtonTitle" = "Encode ->";
 "decodeButtonTitle" = "<- Decode";
+

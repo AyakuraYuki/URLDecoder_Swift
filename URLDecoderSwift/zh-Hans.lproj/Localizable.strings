@@ -14,8 +14,16 @@
 "Quit anyway" = "无论如何都要退出";
 "Cancel" = "不退出，我要保存修改";
 
-// ViewController.swift
+
+// AYWindowController.swift
 "WindowTitle" = "URL编码和解码";
+"About" = "关于 URL编码和解码";
+"Service" = "服务";
+"Close" = "关闭窗口";
+"Quit" = "退出 URL编码和解码";
+
+
+// ViewController.swift
 "plainTextHint" = "输入需要编码的URL/文字...";
 "cipherTextHint" = "输入编码后的URL/文字...";
 "encodeButtonTitle" = "编码 ->";

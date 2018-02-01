@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class AYViewController: NSViewController {
     
     var welcomeFlag: Bool = true
     
@@ -21,6 +21,7 @@ class ViewController: NSViewController {
     /// 解码按钮
     @IBOutlet weak var decodeButton: NSButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,20 +31,32 @@ class ViewController: NSViewController {
         decodeButton.title = NSLocalizedString("decodeButtonTitle", comment: "Title of decode button")
     }
     
-    override func viewDidAppear() {
-        if welcomeFlag {
-            let alert = NSAlert() // 创建提示框
-            alert.messageText = NSLocalizedString("Welcome", comment: "Welcome") // 消息
-            alert.alertStyle = NSAlert.Style.informational // 提示类型
-            alert.runModal() // 显示模态框
-            welcomeFlag = false // 停止之后的欢迎提示
-        }
-    }
+    //    override func viewDidAppear() {
+    //        if welcomeFlag {
+    //            let alert = NSAlert() // 创建提示框
+    //            alert.messageText = NSLocalizedString("Welcome", comment: "Welcome") // 消息
+    //            alert.alertStyle = NSAlert.Style.informational // 提示类型
+    //            alert.runModal() // 显示模态框
+    //            welcomeFlag = false // 停止之后的欢迎提示
+    //        }
+    //    }
     
     override var representedObject: Any? {
         didSet {
             // Update the view, if already loaded.
         }
     }
+    
+    
+    /// 编码
+    @IBAction func encodeButtonClick(_ sender: Any) {
+        
+    }
+    
+    /// 解码
+    @IBAction func decodeButtonClick(_ sender: Any) {
+        
+    }
+    
     
 }

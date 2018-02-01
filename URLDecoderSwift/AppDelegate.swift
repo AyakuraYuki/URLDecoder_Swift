@@ -11,14 +11,25 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    @IBOutlet weak var aboutMenuItem: NSMenuItem!
+    @IBOutlet weak var serviceMenuItem: NSMenuItem!
+    @IBOutlet weak var closeMenuItem: NSMenuItem!
+    @IBOutlet weak var quitMenuItem: NSMenuItem!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        aboutMenuItem.title = NSLocalizedString("About", comment: "")
+        serviceMenuItem.title = NSLocalizedString("Service", comment: "")
+        closeMenuItem.title = NSLocalizedString("Close", comment: "")
+        quitMenuItem.title = NSLocalizedString("Quit", comment: "")
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if !flag {
             for window in sender.windows {
-                window.makeKeyAndOrderFront(self)
+                if let w = window as NSWindow? {
+                    w.makeKeyAndOrderFront(self)
+                }
             }
         }
         return true
