@@ -13,6 +13,7 @@ class AYWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.title = NSLocalizedString("WindowTitle", comment: "Title of window")
+        window?.level = .popUpMenu
     }
     
 }

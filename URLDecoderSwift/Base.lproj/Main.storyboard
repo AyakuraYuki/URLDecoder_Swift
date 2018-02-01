@@ -106,7 +106,6 @@
                         <outlet property="cutMenuItem" destination="ut8-g9-qgv" id="JUt-ay-bU9"/>
                         <outlet property="deleteMenuItem" destination="7gB-Ij-BVD" id="9KZ-9R-2I6"/>
                         <outlet property="editMenuItem" destination="zv1-Ph-JiW" id="UGx-gS-RkM"/>
-                        <outlet property="h2333" destination="4je-JR-u6R" id="Ct7-Wn-7Cz"/>
                         <outlet property="pamMenuItem" destination="9mL-GP-gGO" id="lYA-Lg-G7z"/>
                         <outlet property="pasteMenuItem" destination="hf2-On-3lL" id="6v0-Kh-8bG"/>
                         <outlet property="quitMenuItem" destination="cUP-oJ-YGQ" id="DET-zw-ZOi"/>
@@ -195,7 +194,6 @@
                         <outlet property="decodeButton" destination="Aon-a2-Ezi" id="Ubv-4m-YXh"/>
                         <outlet property="encodeButton" destination="Kfn-gy-FBK" id="okN-yE-UCo"/>
                         <outlet property="plainText" destination="6yt-Lc-vcf" id="edT-Gr-A4s"/>
-                        <outlet property="plainTextView" destination="EoO-9c-QX7" id="Ukp-3U-7Yi"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
