@@ -7,3 +7,16 @@
 */
 
 "Welcome" = "欢迎使用 URL编码和解码 工具";
+
+// AppDelegate.swift
+"Quit without saves message" = "退出时不能保存修改，确定要强制退出吗？";
+"Quit without saves info" = "现在退出将会丢失上次保存后到现在的任何修改数据";
+"Quit anyway" = "无论如何都要退出";
+"Cancel" = "不退出，我要保存修改";
+
+// ViewController.swift
+"WindowTitle" = "URL编码和解码";
+"plainTextHint" = "输入需要编码的URL/文字...";
+"cipherTextHint" = "输入编码后的URL/文字...";
+"encodeButtonTitle" = "编码 ->";
+"decodeButtonTitle" = "<- 解码";

@@ -7,3 +7,16 @@
 */
 
 "Welcome" = "Welcome to URL Encoder and Decoder :D";
+
+// AppDelegate.swift
+"Quit without saves message" = "Could not save changes while quitting. Quit anyway?";
+"Quit without saves info" = "Quitting now will lose any changes you have made since the last successful save";
+"Quit anyway" = "Quit anyway";
+"Cancel" = "Cancel";
+
+// ViewController.swift
+"WindowTitle" = "URL Encoder and Decoder";
+"plainTextHint" = "Input plain url/text here...";
+"cipherTextHint" = "Input encoded url/text here...";
+"encodeButtonTitle" = "Encode ->";
+"decodeButtonTitle" = "<- Decode";
