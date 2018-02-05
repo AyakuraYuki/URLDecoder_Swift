@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var quitMenuItem: NSMenuItem!
     
     @IBOutlet weak var editMenuItem: NSMenuItem!
+    @IBOutlet weak var editMenu: NSMenuItem!
     @IBOutlet weak var cutMenuItem: NSMenuItem!
     @IBOutlet weak var copyMenuItem: NSMenuItem!
     @IBOutlet weak var pasteMenuItem: NSMenuItem!
@@ -31,6 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         closeMenuItem.title = NSLocalizedString("Close", comment: "")
         quitMenuItem.title = NSLocalizedString("Quit", comment: "")
         editMenuItem.title = NSLocalizedString("Edit", comment: "")
+        editMenu.title = NSLocalizedString("Edit", comment: "")
         cutMenuItem.title = NSLocalizedString("Cut", comment: "")
         copyMenuItem.title = NSLocalizedString("Copy", comment: "")
         pasteMenuItem.title = NSLocalizedString("Paste", comment: "")
