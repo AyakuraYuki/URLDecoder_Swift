@@ -1,6 +1,6 @@
 # URLDecoder_Swift
 
-> 一个用于macOS的URLDecoder，使用Swift编写
+> macOS用的小工具，可以对URL进行编码和解码操作
 
 ## 简介
 
